@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/.vs/AnDS-Lab1.1
+/x64/Debug
+/AnDS-Lab1.1/x64/Debug
