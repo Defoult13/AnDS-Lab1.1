@@ -89,11 +89,21 @@ public:
         return result;
     }
 
+    UniqueSet<T>& operator+=(const T& value) {
+        insert(value);
+        return *this;
+    }
+
     // Оператор вычитания числа из множества
     UniqueSet<T> operator-(const T& value) const {
         UniqueSet<T> result = *this;
         result.remove(value);
         return result;
+    }
+
+    UniqueSet<T>& operator-=(const T& value) {
+        remove(value);
+        return *this;
     }
 
     // Вычисление пересечения двух множеств
